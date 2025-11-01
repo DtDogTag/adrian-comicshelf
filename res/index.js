@@ -274,7 +274,6 @@ function handleCollectionOpen(e){
 }
 
 function openCollection(id){
-    console.log(id);
     
     let found_collection = findCollection(id),
         found_subcollections = findSubcollections(id),
@@ -304,7 +303,7 @@ function openCollection(id){
         details.appendChild(par);
     }
 
-    console.log(id, found_subcollections);
+    window.scrollTo(0, 0);
 
     for(let i = 0; i < found_subcollections.length; i++){
         generateSubcollection(found_subcollections[i]);
@@ -325,7 +324,6 @@ function findSubcollections(id){
     let array = [];
 
     for(let i = 0; i < subcollections_array.length; i++){
-        console.log(subcollections_array[i].colectie, id)
         if(subcollections_array[i].colectie == id){
             array.push(subcollections_array[i]);
         }
