@@ -69,7 +69,7 @@ function getIcon(type){
         case "isbn":
             icon = "at-sign";
             break;
-        case "editura":
+        case "status":
             icon = "pen-tool";
             break;
         case "locatie":
