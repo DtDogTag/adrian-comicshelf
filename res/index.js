@@ -70,7 +70,8 @@ function getIcon(type){
             icon = "at-sign";
             break;
         case "status":
-            icon = "pen-tool";
+            // icon = "pen-tool";
+            icon = "done_outline";
             break;
         case "locatie":
             icon = "map-pin";
